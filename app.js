@@ -1,5 +1,5 @@
 // IC1 – COSC 2328 – Professor McCurry
-// Implemented by: [Your Full Name]
+// Implemented by: Jessica Dunlap
 const express = require("express");                       // load the Express web framework
 const path    = require("path");                          // built-in Node module for working with file paths
 const app     = express();                               // create the Express application
