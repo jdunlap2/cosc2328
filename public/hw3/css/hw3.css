@@ -1,0 +1,73 @@
+/* HW3  – COSC 2328 – Professor McCurry
+    Implemented by: Jessica Dunlap */
+
+body {
+    background-color: #eeeae6;
+    /* background-color: #E9D8A6; */
+    color: #165461;
+    font-family: Arial, sans-serif;
+}
+:root {
+  --name-color: #005F73;
+  --sub-color: #826238;
+  --image-border: #9f7750;
+  --image-bg: #d6ac82;
+  --box-border: #3f6041;
+  --box-bg: #7e9481;
+  --box-text-color: #0c1c10;
+  --space: 16px;
+  --radius: 8px;
+}
+h1 {
+  color: var(--name-color);
+  text-align: center;
+  font-size: 60px;
+}
+
+/* #name {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 64px;
+} */
+
+.subhead{
+    color: var(--sub-color);
+    font-size: 25px;
+}
+
+.image-wrapper {
+  width: 320px;
+  padding: var(--space);  
+  margin: var(--space) auto;               
+  border: 3px solid var(--image-border);
+  background-color: var(--image-bg);
+  border-radius: var(--radius);
+  box-shadow: 2px 2px 2px 2px #adadad;
+}
+.image-wrapper img {
+    width: 320px;
+    /* height: 320px; */
+ }
+
+ .course-wrapper {
+    color: var(--box-text-color);
+    width: 400px;
+    margin: var(--space) auto; 
+    border: 3px solid var(--box-border);
+    box-shadow: 2px 2px 2px 2px #adadad;
+    background-color: var(--box-bg);
+    /* text-align: center; */
+    padding: 8px;
+    border-radius: var(--radius);
+    font-size: 18px;
+ }
+
+ .link {
+    margin: var(--space) auto; 
+    border: 3px solid var(--box-border);
+    background-color: #c1a4d7;
+    border: 3px solid #c1a4d7;
+}
+.link:hover {
+        background-color: #b281d8;
+    }
