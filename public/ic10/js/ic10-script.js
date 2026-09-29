@@ -47,3 +47,15 @@ if ((hasAccount && agreedToTerms) || isEmailVerified){
     console.log("registration blocked");
 }
 
+// extra credit
+// for both null and undefined the value is considered falsy, and prints cart is empty 
+
+
+const itemCount = 5;
+let hasItems = true;
+
+if ((itemCount > 0 && hasItems)) {
+    console.log("Cart has " + itemCount + " items");
+} else {
+    console.log("Cart is empty");
+}
