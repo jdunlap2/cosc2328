@@ -1,0 +1,71 @@
+<!-- HW4 – COSC 2328 – Professor McCurry
+     Implemented by: Jessica Dunlap-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IC8 — Tables & Forms</title>
+    <link rel="stylesheet" href="css/hw4.css">
+</head>
+<body>
+<header>
+    <h1> FutureWeb 2026 </h1>
+    <p> The Best Conference of 2026!</p>
+</header>
+<main class="container">
+    <div class="event-info">
+       <h2>Event Details</h2>
+       <ul>
+           <li>Date: May 25-27, 2026</li>
+           <li>Location: FutureWeb Convention Center</li>
+           <li>Keynote Speaker: Dr. John Doe</li>
+       </ul>
+       <img src="images/picture.jpeg" title="created by So G on Pinterest" alt="image of technology, created by So G on pinterest">
+    </div>
+
+
+    <div class="registration-form"> Registration Form 
+        <form action="https://httpbin.org/post" 
+            method="post" 
+            enctype="multipart/form-data">
+            <fieldset>
+                <legend>Attendee Details</legend>
+
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname"
+                        placeholder="Enter your full name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"
+                        placeholder="your.email@example.com" required>
+
+                <label for="date">Date of Arrival</label>
+                <input type="date" id="date" name="date" 
+                placeholder="Enter your date of arrival" required>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Session Preferences</legend>
+                <select>Track Selection
+                    <optgroup label="Frontend">
+                        <option value="React">React</option>
+                        <option value="Vue">Vue</option>
+                        <option value="CSS">CSS</option>
+                    </optgroup>
+                    <optgroup label="Backend">
+                        <option value="Node.js">Node.js</option>
+                        <option value="python">Python</option>
+                        <option value="Docker">Docker</option>
+                    </optgroup>
+                    <label>Upload Resume/Portfolio</label>
+                    <input type="file" accept=".pdf,.docx">
+                </select>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+</main>
+</body>
+</html>
