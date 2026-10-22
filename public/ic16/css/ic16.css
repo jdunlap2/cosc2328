@@ -1,5 +1,7 @@
 /* IC16 – COSC 2328 – Professor McCurry
    Implemented by: Jessica Dunlap */
+
+   
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body { font-family: 'Comic Sans MS', 'Trebuchet MS', sans-serif; background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%); min-height: 100vh; padding: 20px; }
