@@ -31,8 +31,12 @@ app.get('/ic19/config', (req, res) => {                  // NEW — IC19: GET ro
 
 app.use("/ic20", require("./routes/ic20-routes"));
 
-//hw 9 
+//hw 9
 app.use('/hw9', require('./routes/hw9-routes'));  // NEW — HW9: mount hw9 router
+
+//ic22
+app.use("/ic22", require("./routes/ic22-routes"));
+
 
 app.listen(PORT, "0.0.0.0", () =>                        // 0.0.0.0 makes the server reachable from the droplet
   console.log(`Running on http://localhost:${PORT}`)
